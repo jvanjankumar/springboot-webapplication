@@ -25,14 +25,14 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.0.2</version>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>1.0</version>
 					<executions>
 						<execution>
-						<id>default-deploy</id>
+						<id>enforce-versions</id>
 						<phase>deploy</phase>
 							<goals>
-								<goal>deploy</goal>
+								<goal>enforce</goal>
 							</goals>
 						</execution>
 					</executions>
